@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morpion accessible</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1>Morpion</h1>
+
+      <p id="instructions" class="instructions">
+        Utilisez Tab ou les flèches pour déplacer le focus sur les cases.
+        Appuyez sur Entrée ou Espace pour jouer dans la case focalisée.
+      </p>
+
+      <div id="status" class="status" role="status" aria-live="polite" aria-atomic="true">
+        Chargement…
+      </div>
+
+      <section class="game" aria-describedby="instructions" aria-label="Jeu du morpion">
+        <div id="board" class="board" role="group" aria-label="Grille du morpion">
+          <button class="cell" data-index="0" aria-label="Case ligne 1, colonne 1, vide"></button>
+          <button class="cell" data-index="1" aria-label="Case ligne 1, colonne 2, vide"></button>
+          <button class="cell" data-index="2" aria-label="Case ligne 1, colonne 3, vide"></button>
+
+          <button class="cell" data-index="3" aria-label="Case ligne 2, colonne 1, vide"></button>
+          <button class="cell" data-index="4" aria-label="Case ligne 2, colonne 2, vide"></button>
+          <button class="cell" data-index="5" aria-label="Case ligne 2, colonne 3, vide"></button>
+
+          <button class="cell" data-index="6" aria-label="Case ligne 3, colonne 1, vide"></button>
+          <button class="cell" data-index="7" aria-label="Case ligne 3, colonne 2, vide"></button>
+          <button class="cell" data-index="8" aria-label="Case ligne 3, colonne 3, vide"></button>
+        </div>
+
+        <div class="actions">
+          <button id="reset" class="reset" type="button">Recommencer</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+

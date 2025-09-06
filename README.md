@@ -1,10 +1,24 @@
-- 👋 Hi, I’m @cedric1067
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# Morpion accessible (Tic-Tac-Toe)
 
-<!---
-cedric1067/cedric1067 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Un jeu de morpion simple, jouable au clavier et compatible avec les lecteurs d’écran.
+
+## Démarrage
+
+Ouvrez `index.html` dans votre navigateur. Aucun serveur requis.
+
+## Commandes et accessibilité
+
+- Navigation: Tabulation et flèches pour se déplacer entre les cases
+- Action: Entrée ou Espace pour jouer dans la case focalisée
+- Annonces: région avec `role="status"` (`aria-live="polite"`)
+- Libellés: `aria-label` dynamique indiquant la position (ligne/colonne) et l’état
+
+## Structure
+
+- `index.html`: structure et ARIA
+- `styles.css`: styles responsives, focus visibles
+- `script.js`: logique du jeu, navigation clavier, annonces
+
+## Licence
+
+MIT
